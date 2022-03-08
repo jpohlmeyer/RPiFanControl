@@ -1,0 +1,10 @@
+[Unit]
+Description=Fancontrol daemon
+
+[Service]
+Type=simple
+ExecStart=/home/pi/RPiFanControl/fancontrol.py
+RemainAfterExit=no
+
+[Install]
+WantedBy=multi-user.target
