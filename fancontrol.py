@@ -18,7 +18,7 @@ class FanControl:
     def start(self):
         GPIO.output(self.pinNumber, GPIO.HIGH)
 
-    def exit(self):
+    def exit(self, *args):
         GPIO.output(self.pinNumber, GPIO.LOW)
 
 def main():
