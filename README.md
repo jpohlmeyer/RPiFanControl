@@ -4,8 +4,11 @@ Simple script to turn on a fan (controlled by pin 25) on a Raspberry Pi. For now
 
 In my usecase the fan is used to prevent overheating and throttling of a Raspberry Pi 3 running a LibreELEC mediacenter.
 
+## Kodi Addon
+
+The Kodi Addon to run the script as a Kodi service is located on the `kodi` branch.
+
 ## TODO
 
 - Turn fan on/off depending on the current temperature
-- Implement as Kodi Addon
 - Document electronic circuit
