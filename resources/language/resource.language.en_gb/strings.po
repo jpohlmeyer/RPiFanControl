@@ -1,0 +1,37 @@
+# Kodi Media Center language file
+# Addon Name: RPiFanControl
+# Addon id: service.rpifancontrol
+# Addon Provider: jpohlmeyer
+msgid ""
+msgstr ""
+"Project-Id-Version: Kodi Addons\n"
+"Report-Msgid-Bugs-To: https://github.com/jpohlmeyer/RPiFanControl/issues\n"
+"POT-Creation-Date: 2022-03-27 20:00+0000\n"
+"PO-Revision-Date: 2022-03-27 20:00+0000\n"
+"Last-Translator: Jan Pohlmeyer\n"
+"Language-Team: English\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: en\n"
+"Plural-Forms: nplurals=2; plural=(n != 1)\n"
+
+msgctxt "#30001"
+msgid "General settings"
+msgstr ""
+
+msgctxt "#30002"
+msgid "Disable Addon (if enabled)"
+msgstr ""
+
+msgctxt "#30003"
+msgid "GPIO Pin (Make sure to disable the Addon before changing)"
+msgstr ""
+
+msgctxt "#30004"
+msgid "Temperature threshold (°C)"
+msgstr ""
+
+msgctxt "#30005"
+msgid "Minimum cooling duration (seconds)"
+msgstr ""

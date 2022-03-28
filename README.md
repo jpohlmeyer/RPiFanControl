@@ -2,6 +2,8 @@
 
 Simple script to turn on a fan (controlled by GPIO Pin 25) on a Raspberry Pi. The fan will turn on once the temperature reaches 65°C. Every 5 minutes the script checks the temperature again and turn the fan off if the temperature dropped below the threshold.
 
+The GPIO pin number, the temperature threshold and the minimum cooling interval can be configured.
+
 In my use case the fan is used to prevent overheating and throttling of a Raspberry Pi 3 Model B running a LibreELEC mediacenter.
 The addon and script is using python instead of python3 because of missing python3 support in LibreELEC 9.
 

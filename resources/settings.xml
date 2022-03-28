@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<settings>
+    <category label="30001">
+        <setting label="30002" type="action" action="RunScript(service.rpifancontrol)"/>
+        <setting label="30003" type="number" id="gpiopin" default="25"/>
+        <setting type="sep"/>
+        <setting label="30004" type="number" id="temperaturethreshold" default="65"/>
+        <setting label="30005" type="number" id="minimumcoolingduration" default="300"/>
+    </category>
+</settings>
