@@ -4,17 +4,30 @@ import sys
 sys.path.append("/storage/.kodi/addons/virtual.rpi-tools/lib")
 
 from fancontrol import FanControl
+from fancontrol import SettingsProviderInterface
 import signal
 import time
 
 fancontrol = None
+
+class TestSettingsProvider(SettingsProviderInterface):
+
+    def get_gpio_pin(self):
+        return 25
+
+    def get_temperature_threshold(self):
+        return 65000
+    
+    def get_min_cooling_duration(self):
+        return 300
 
 def exit(*args):
     fancontrol.exit()
 
 def main():
     global fancontrol
-    fancontrol = FanControl(25)
+    settings_provider = TestSettingsProvider()
+    fancontrol = FanControl(settings_provider=settings_provider)
     signal.signal(signal.SIGINT, exit)
     signal.signal(signal.SIGTERM, exit)
     fancontrol.start()
